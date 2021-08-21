@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+$Softred: hsl(7, 99%, 70%);
+$Yellow: hsl(51, 100%, 49%);
+$Darkdesaturatedcyan : hsl(167, 40%, 24%);
+$Darkblue : hsl(198, 62%, 26%);
+$Darkmoderatecyan :hsl(168, 34%, 41%);
+$Verydarkdesaturatedblue: hsl(212, 27%, 19%);
+$Darkgrayishblue: hsl(232, 10%, 55%);
+$Grayishblue: hsl(210, 4%, 67%);
+$White: hsl(0, 0%, 100%);
+$font1 : 'Barlow', sans-serif;
+$font2: 'Fraunces', serif;
+
+@mixin testimonals {
+    text-align: center;
+    margin-top: 1rem;
+    font-family: $font1;
+    font-size: 0.9rem;
+    margin: 4rem;
+    img{
+        border-radius: 10rem;
+        width: 4rem;
+        height: 4rem;
+    }
+    p{
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        color: $Darkgrayishblue;
+    }
+    h3{
+        font-family: $font2;
+    } 
+}
+html{
+    font-size: 18px;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    box-sizing: border-box;
+}
+
+.sec1{
+    
+    .bgimg{
+        grid-column: 1/5;
+        width: 70rem ;
+        height: 35rem;
+    }
+
+    .logo{
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
+    ul{
+        
+        position: absolute;
+        top: 1rem;
+        right: 4rem;
+        list-style-type: none;
+    } 
+    li{
+        display: inline;
+        text-decoration: none;
+    }
+    a{
+        text-decoration: none;
+        margin-left: 0.8rem;
+        color: $White;
+    }
+    button{
+        border-radius: 2rem ;
+        border: $White;
+        background-color: $White;
+        width: 7rem;
+        height: 2rem;
+    }
+    h3{
+        position: absolute;
+        top: 5.8rem;
+        left: 20rem;
+        font-family: $font2;
+        color: white;
+        font-size: 3.5rem;
+    }
+
+    .arrow{
+        position: absolute;
+        top: 15rem;
+        left: 33rem;
+    }
+
+}
+
+.sec2{
+   background-color: rgb(240, 233, 234);
+   h3{
+    grid-column: 1/3; 
+    grid-row: 1;
+    margin-top: 8rem;
+    margin-left: 5rem;
+    font-family: $font2;
+    font-size: 1.8rem;
+   }
+
+   p{
+    grid-column: 1/3; 
+    grid-row: 1; 
+    margin-top: 15rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-family: $font1;
+    font-weight: 100;
+    color: $Darkgrayishblue;
+   }
+
+   a{
+    grid-column: 1/3; 
+    grid-row: 1; 
+    margin-top: 21rem;
+    margin-left: 5rem;
+    font-family: $font2;
+    color: black;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: $Yellow;
+   }
+   img{
+       width: 35rem;
+       grid-column: 3/5;
+       grid-row: 1/4;
+   }
+}
+
+.sec3{
+    background-color: rgb(235, 228, 229);
+    h3{
+     grid-column: 3/5; 
+     grid-row: 1;
+     margin-top: 8rem;
+     margin-left: 5rem;
+     font-family: $font2;
+     font-size: 1.8rem;
+    }
+ 
+    p{
+     grid-column: 3/5; 
+     grid-row: 1; 
+     margin-top: 15rem;
+     margin-left: 5rem;
+     margin-right: 5rem;
+     font-family: $font1;
+     font-weight: 100;
+     color: $Darkgrayishblue;
+    }
+ 
+    a{
+     grid-column: 3/5; 
+     grid-row: 1; 
+     margin-top: 21rem;
+     margin-left: 5rem;
+     font-family: $font2;
+     color: black;
+     text-decoration: underline;
+     text-decoration-style: solid;
+     text-decoration-color: $Yellow;
+    }
+    img{
+        width: 35rem;
+        grid-column: 1/3;
+        grid-row: 1/4;
+    }
+}
+
+.sec4{
+    .sec4a{
+        grid-template-rows: repeat(3 , 1fr) ;
+        grid-column: 1/3;
+        color: $Darkmoderatecyan;
+        img{
+            width: 35rem;
+        }
+        h3{
+            margin-bottom: 5rem;
+            position: absolute;
+            top: 115rem;
+            left: 10rem;
+            font-family: $font2;
+            font-size: 2rem;
+        }
+        p{
+            position: absolute;
+            top: 118rem;
+            left: 8rem; 
+            font-family: $font1;
+        }
+
+    }
+    .sec4b{
+        grid-column: 3/5;
+        color: $Verydarkdesaturatedblue;
+        img{
+            width: 35rem;
+        }
+        h3{
+            margin-bottom: 5rem;
+            position: absolute;
+            top: 115rem;
+            left: 45rem;
+            font-family: $font2;
+            font-size: 2rem;
+        }
+        p{
+            position: absolute;
+            top: 118rem;
+            left: 42rem; 
+            font-family: $font1;
+        }
+    }
+}
+
+.sec5{
+
+    grid-template-columns: repeat(3, 1fr);
+    h4{
+        grid-column: 2/3;
+        text-align: center;
+        margin-top: 5rem;
+        font-family: $font2;
+        font-size: 1.3rem;
+        color: $Darkgrayishblue;
+        text-transform: uppercase;
+    }
+    .sec5a{
+        grid-column: 1/2;
+        @include testimonals;
+    }
+    
+    .sec5b{
+        grid-column: 2/3;
+        @include testimonals;
+    }
+    
+    .sec5c{
+        grid-column: 3/4;
+        @include testimonals;
+    }
+    
+}
+
+
+
+.sec6{
+    .sec6a{
+        width: 17.5rem;
+        grid-column: 1/2;
+    }
+    .sec6b{
+        width: 17.5rem;
+        grid-column: 2/3;
+    }
+    .sec6c{
+        width: 17.5rem;
+        grid-column: 3/4;
+    }
+    .sec6d{
+        width: 17.5rem;
+        grid-column: 4/5;
+    }
+}
+
+
+.sec7{
+    
+    background-color: $Darkmoderatecyan;
+    text-align: center;
+    height: 10rem;
+    h2{
+        color: hsl(167, 40%, 24%);
+        font-family: $font2;
+        text-align: center;
+        margin-top: -6.5rem;
+        
+        grid-column: 2/4;
+    }
+    
+    p{
+        color: hsl(167, 40%, 24%);
+        font-family: $font1;
+        margin-top: 5rem;
+        grid-row: 1;
+        gap: 1rem;
+        grid-column: 1/5;
+        display: inline-block;  
+        grid-column: 2/4;
+    }
+
+    .sec7a{
+        grid-column: 2/4;
+        grid-row: 1;  
+    }
+    .sec7b{
+        grid-column: 2/4; 
+        grid-row: 1;  
+    }
+    .sec7c{
+        grid-column: 2/4; 
+        grid-row: 1;  
+    }
+    .sec7d{
+        grid-column: 2/4;  
+        grid-row: 1; 
+    }
+
+}
+
+@media  (max-width: 768px) and (min-width: 320px) {
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        box-sizing: border-box;
+    }
+
+    .sec1{
+        
+        grid-column: 1/2;
+        background-image: url("images/mobile/image-header.jpg");
+        .bgimg{
+            
+            background-image: url("images/mobile/image-header.jpg");
+        }
+        ul{
+            display: none;
+        }
+    }
+}
